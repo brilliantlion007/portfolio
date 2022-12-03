@@ -1,0 +1,252 @@
+.no_overflow{
+  // one line no overflow
+  // white-space: nowrap;
+  //  overflow:hidden; 
+  //  text-overflow: ellipsis; 
+
+  // multiline no no overflow
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   line-height: 1.625;
+}
+
+.background { 
+
+  background-color: #ff1534;
+  background-image: url('../../assets/background/Firewatch.jpg');
+ width:100%;height:100%;
+    // pointer-events: none;
+
+    // position: absolute;
+    // z-index: -1;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+     
+  }
+
+ 
+
+
+  .Line {
+    z-index: 1;
+    width: 100%;
+    border: solid 1px #ffffff;
+  }
+
+  .BQ {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-size: 30px;
+    font-weight: 3;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.86);
+  }
+
+  .Benedict-Quartey {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-size: 23px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.86);
+  }
+
+  .Project-Tontro {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-size: 23px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    float: right;
+    color: rgba(255, 255, 255, 0.86);
+  }
+
+  .BiographyHead {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.86);
+  }
+
+  .Biography {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-size: 32px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.86);
+  }
+
+  .TontroMascot {
+  float: right;
+  width: 110px;
+  height: 169px;
+}
+
+.Line2 {
+  width: 100%;
+  border: solid 0.5px #ffffff;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Line3 {
+  width: 100%;
+  border: solid 0.5px #000000;
+}
+
+.softwareDev {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.Events{
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+// hide elements when screen width is less than 766px (phones and small tablets)
+@media(max-width:766px){
+  .hide-0-to-766{
+    display:none;
+  }
+} 
+
+.HeaderTitles {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.title {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  font-size: 32px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  // padding-top: 10%;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+  // hide elements when screen width is less than 768px (phones and small tablets)
+  @media(max-width:768px){
+    .hide-0-to-768{
+      display:none;
+    }
+  } 
+
+
+    // hide elements when screen width is less than 1376px (phone,tablets,etc)
+@media(max-width:1376px){
+    .hide-0-to-1376{
+      display:none;
+    }
+  }  
+
+
+  // hide for large screens
+  @media(min-width:769px){
+    .hide-769-to-up{
+      display:none;
+    }
+  } 
+
+
+//   // for stackable cards
+//     // hide for large screens larger than 438px width
+//     @media(min-width:320){
+//       .hide-320-to-up{
+//         display:none;
+//       }
+//     } 
+
+// // for doubling cards
+//         // hide elements when screen width is less than 438px (phone,tablets,etc)
+// @media(max-width:438){
+//   .hide-0-to-438 {
+//     display:none;
+//   }
+// }  
+
+
+
+// color lazy loading
+.blurrybeach{
+  background: rgb(184,77,78);
+  background: linear-gradient(89deg, rgba(184,77,78,1) 0%, rgba(200,164,110,1) 100%);
+}
+
+.quepal{
+  background: rgb(7, 190, 145);
+  background: linear-gradient(117deg, rgb(9, 154, 141) 0%, rgb(0, 175, 119) 100%);
+}
+
+.scooter{
+  background: rgb(26,182,196);
+  background: linear-gradient(120deg, rgba(26,182,196,1) 0%, rgba(67,110,196,1) 100%);
+}
+
+.brightred{
+  background: rgb(204,40,60);
+  background: linear-gradient(124deg, rgba(204,40,60,1) 0%, rgba(116,21,18,1) 100%);
+
+}
+
+
+.orangecoral{
+  background: -webkit-linear-gradient(left, rgb(255, 153, 102) 0%, rgb(255, 106, 99) 80%, rgb(255, 94, 98) 100%);
+  background: -o-linear-gradient(left, rgb(255, 153, 102) 0%, rgb(255, 106, 99) 80%, rgb(255, 94, 98) 100%);
+  background: -ms-linear-gradient(left, rgb(255, 153, 102) 0%, rgb(255, 106, 99) 80%, rgb(255, 94, 98) 100%);
+  background: -moz-linear-gradient(left, rgb(255, 153, 102) 0%, rgb(255, 106, 99) 80%, rgb(255, 94, 98) 100%);
+  background: linear-gradient(to right, rgb(255, 153, 102) 0%, rgb(255, 106, 99) 80%, rgb(255, 94, 98) 100%);
+
+}

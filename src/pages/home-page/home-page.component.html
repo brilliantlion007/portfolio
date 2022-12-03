@@ -1,0 +1,158 @@
+<!-- modal for displaying incomplete project abstract update to become dynamic -->
+
+
+<div id="gradient-container">
+        <div class="background">
+                <div class="ui container " style="width:88%;padding-top:2%">
+                        <div class="ui grid" style="padding-bottom:2%">
+                                <div class="three wide column">
+                                        <a class="BQ " href="https://www.linkedin.com/in/benedictquartey/">BQ</a>
+                                </div>
+                                <div class=" ten wide column ">
+                                        <a class="Benedict-Quartey hide-0-to-766">Benedict Quartey</a>
+                                </div>
+                                <div class="three wide column">
+                                        <!-- visibly clickable -->
+                                        <!-- <a class="Project-Tontro  large ui  inverted button"
+                                                href="https://www.instagram.com/projecttontro/">Social Project</a> -->
+
+                                        <!-- 2nd Variant -->
+                                        <a class="Project-Tontro"
+                                                >Portfolio Website</a>
+                                </div>
+                        </div>
+
+
+                        <div class="Line"></div>
+
+                        <div class="ui stackable grid" style="padding-top:2%;padding-bottom:1%">
+                                <div class="three wide column">
+                                        <a class="BiographyHead ">About Me</a>
+                                </div>
+                                <div class="nine wide column">
+                                        <!-- <p class="Biography ">Autodidact polymath, dreamer, inventor, artist,
+                                                roboticist. On a constant journey of self-improvement and knowledge.
+                                        </p> -->
+                                        <p class="Biography ">Dreamer, artist and Computer Science PhD student advised by 
+                                                <a style="color: white; " href="http://cs.brown.edu/people/gdk/">George Konidaris</a>, in the 
+                                                <a href="http://irl.cs.brown.edu/" style="color:white; ">Intelligent Robot Lab</a>
+                                                 at Brown University.
+                                        </p>
+                                </div>
+                                <div class="four wide column" style="margin-top:-1%">
+                                        <img src="assets/icons/TontroMascot.png" class="TontroMascot hide-0-to-766">
+                                </div>
+                        </div>
+
+                        <div class="Line2"></div>
+
+
+                        
+
+                </div>
+        </div>
+</div>
+
+<!-- 2nd page -->
+<div class="ui container " style="width:88%;padding-top:2%">
+        <div class="Line3" style="margin-top:4%;"></div>
+
+        <div class="ui grid" style="padding-top:1%;">
+
+
+                <div class="three wide column ">
+                        <a class="softwareDev hide-0-to-768" >My Projects</a>
+                        <a class="softwareDev hide-769-to-up">My Projects</a>
+                </div>
+                <div class=" ten wide column ">
+                        <!-- Empty but creates structure     -->
+                </div>
+
+ 
+
+                <!--             
+                <div class="ui two wide column" style="float: right;">
+
+                        <a class="softwareDev" routerLink="/art-page" style=";">Artistry </a>
+                </div> -->
+        </div>
+
+        <!-- list of software projects -->
+        <div class="ui four doubling cards" style="padding-top:2%;">
+                <a class="card" *ngFor="let project of software_projects" (click)="viewProject($event, project.id)">
+                        <div class="ui segment" style="height:350px">
+                                <div class="header no_overflow" style="color:black;height: 50px; padding-bottom:3% ">
+                                        {{project.title}}</div>
+
+                                <img class=" ui rounded image {{project.lazyloadimg}}"
+                                        style="object-fit:cover;width:100%;height:85%" 
+                                                sizes="25vw"
+                                                src="{{project.cover_art}}">
+
+                                
+                        </div>
+                </a>
+
+        </div>
+
+        <!-- more projects button -->
+
+        <div style="text-align:center; padding-top:1%;padding-bottom:2%">
+                <a class="softwareDev " routerLink="/soft_dev-page" style="float: right; font-size: 17px;">more projects
+                        ></a>
+        </div>
+
+
+
+        <div class="ui sixteen wide column" style="padding-top:4%;">
+                <a class="softwareDev ">Recent Updates</a>
+        </div>
+
+        <!-- list of events -->
+        <div class="ui stackable celled list">
+                <a class="item" href="{{event.link}}" *ngFor="let event of events">
+                        <div class="ui grid" style="margin-top:0.3%;margin-bottom:0.3%">
+                                <div class="ui five wide column ">
+                                        <a class="Events ">{{event.date}}</a>
+                                </div>
+
+                                <div class="ui eight wide column ">
+                                        <a class="Events ">{{event.title}}</a>
+                                </div>
+
+                                <div class="ui three wide column ">
+                                        <a class="Events" style="float:right">{{event.type}}</a>
+                                </div>
+                        </div>
+                </a>
+        </div>
+
+        <!-- more events button -->
+
+        <div style="text-align:center;">
+                <a class="softwareDev " routerLink="/updates-page" style="float: right; font-size: 17px;">more updates
+                        ></a>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="ui grid" style="margin-top:8.3%">
+                <div class="ui five wide column ">
+                        <a href="">
+                                <i class="black large linkedin icon"></i>
+                        </a>
+
+                        <a href="">
+                                <i class="black large twitter icon"></i>
+                        </a>
+                </div>
+
+                <div class="ui six wide column ">
+                     
+                </div>
+
+                <div class="ui five wide column ">
+                        <a style="float:right; color:black">benedict_quartey@brown.edu</a>
+                </div>
+        </div>
+</div>

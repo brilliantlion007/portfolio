@@ -1,0 +1,163 @@
+<div class="gradient-fallback">
+    <div class="background">
+        <div class="ui container " style="width:88%">
+            <div class="ui grid " style="padding-top:2%">
+                <div class="three wide column ">
+                    <a><img routerLink="/home-page" src="assets/icons/back.svg" style="height: 45px;"></a>
+                </div>
+                <div class=" ten wide column ">
+                    <!-- Empty but creates structure     -->
+                </div>
+                <div class="three wide column">
+                    <a class="HeaderTitles " style="float: right">My Projects</a>
+                </div>
+            </div>
+
+            <div class="Line" style="margin-top:1%;"></div>
+
+            <!-- style 1 for cover image and description without container (hide on mobile only show this grid on computers or wide screen widths) -->
+
+            <div class="ui grid hide-0-to-768" style="padding-top:2%">
+                <div class="four wide column ">
+                    <div class="ui segment " style="height:350px;">
+                        <div class="header no_overflow" style="height: 50px; padding-bottom:3% ">
+                            {{project.title}}</div>
+
+                        <img class="brightred" style="object-fit:cover;width:100%;height:85%" sizes="25vw"
+                            src="{{project.cover_art}}">
+                    </div>
+
+                </div>
+                <div class="three wide column">
+
+                </div>
+                <div class="nine wide column">
+                    <a class="HeaderTitles " style="float: right">
+                        <p class="title "> This project explores creating realistic personas and storyboarding user
+                            journeys that accurately capture complete user experiences as they interact with a chosen
+                            interface. The user interaction insights used in this project were obtained by observing the
+                            natural interactions of users and interviewing said users.
+                        </p>
+                    </a>
+                    <!-- <p style="font-weight:bold;color: #ffffff;float:right">[ Date: {{project.date}} ]</p> -->
+                </div>
+
+            </div>
+
+            <!-- hide this grid on computers or wide screen widths, only show on mobile and small screen widths -->
+            <div class="ui grid hide-769-to-up">
+                <div class="sixteen wide column ">
+                    <a class="HeaderTitles " style="float: right">
+                        <p class="title ">Cross platform vending ecosystem for food entrepreneurs. Caters to the varied
+                            needs
+                            of large restaurants, small scale entrepreneurs and hobbyist chefs
+                        </p>
+                    </a>
+                    <p style="font-weight:bold;color: #ffffff;float:right">[ Date: {{project.date}} ]</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <br>
+        <br>
+    </div>
+
+</div>
+
+<div class="ui text container" style="padding-top:5%;">
+
+    <h1 class="font_0" style="line-height:normal; font-size:25px;"><span style="letter-spacing:normal;">Interface
+            Description</span></h1>
+
+    <p class="text">
+        The interface studied in this project is that of a Kitchenette with a coffee machine, this interface is publicly
+        accessible and situated in an open area typically designated for graduate computer science students and
+        professors. This study was focused on the coffee-making experience of users that may interact with this
+        interface. The vital interactive components in this interface in relation to the studied coffee-making task are
+        labelled cabinets and the actual coffee machine. The sketch below shows this interface, highlighting the key
+        components.
+
+    </p>
+</div>
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <img class="center" style="width:90%;height:0%" src="assets/project_persona/Interface2.png">
+        <p>Annotated Sketch of Interface highlighting key interactive components</p>
+    </div>
+</div>
+
+
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span style="letter-spacing:normal;">Interface
+                Description</span></h1>
+        <p class="text">
+            To obtain the user interaction data for this project I simply asked three people to make me a coffee. I
+            observed their interaction with the interface and subsequently interviewed them. The table below presents
+            the insights from this process.</p>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <img class="center" style="width:100%;height:0%" src="assets/project_persona/observations.png">
+        <!-- <p>Annotated Sketch of Interface highlighting key interactive components</p> -->
+    </div>
+</div>
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span style="letter-spacing:normal;">Empathy Maps</span></h1>
+        <p class="text">
+            Based on the information obtained from the user experience research highlighted above, I developed empathy maps to represent two(2) different user personas: Stressed Stacy and Curious Carter.</p>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <div class="ui grid" style="margin-top:0.3%;margin-bottom:0.3%">
+            <div class="ui eight wide column ">
+                <img class="center" style="width:90%;height:100%" src="assets/project_persona/stacy.png">
+            </div>
+
+            <div class="ui eight wide column ">
+                <img class="center" style="width:90%;height:100%" src="assets/project_persona/carter.png">
+            </div>
+    </div>
+    </div>
+</div>
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <img class="center" style="width:100%;height:0%" src="assets/project_persona/empthy map.png">
+        <!-- <p>Annotated Sketch of Interface highlighting key interactive components</p> -->
+    </div>
+</div>
+
+
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span style="letter-spacing:normal;">Storyboards</span></h1>
+        <p class="text">
+            The storyboard below follows the entire interaction journey of the Stressed-Stacy persona as she tries to make coffee while working to meet a deadline.</p>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <img class="center" style="width:100%;height:0%" src="assets/project_persona/storyboard1.png">
+        <img class="center" style="width:100%;height:0%" src="assets/project_persona/storyboard2.png">
+    </div>
+</div>
+
+
+<div>
+    <br>
+    <br>
+</div>
