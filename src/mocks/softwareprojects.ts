@@ -6,7 +6,7 @@ export const software_projects: SoftwareProject[] = [
     {
         id: 0,
         title: "Designing Empathetic Personas & Storyboarding",
-        cover_art: "assets/project_persona/persona_splash.png",
+        cover_art: "assets/project_persona/splash.png",
         project_page: "/personas-page",
         lazyloadimg: 'orangecoral',
         date:""
@@ -14,16 +14,16 @@ export const software_projects: SoftwareProject[] = [
     {
         id: 1,
         title: "Reflection on Responsive Redesign",
-        cover_art: "assets/project_onyx/onyx_splash1.png",
+        cover_art: "assets/project_responsive/splash.png",
         project_page: "/redesign-page",
-        lazyloadimg: 'scooter',
+        lazyloadimg: 'violet',
         date:""
     },
 
     {
         id: 2,
         title: "Iterative Design for a Realworld Startup",
-        cover_art: "assets/project_food/food_splash.png",
+        cover_art: "assets/project_iterative/splash.png",
         project_page: "/iterative-page",
         lazyloadimg: 'brightred',
         date:""
@@ -34,7 +34,7 @@ export const software_projects: SoftwareProject[] = [
     {
         id: 3,
         title: "A Deep Dive into React Development",
-        cover_art: "assets/project_citizen/citizen_splash1.png",
+        cover_art: "assets/project_react/splash.png",
         project_page: "/react-page",
         lazyloadimg: 'quepal',
         date:""

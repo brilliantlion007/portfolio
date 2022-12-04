@@ -31,7 +31,6 @@
      
   }
 
- 
 
 
   .Line {
@@ -40,7 +39,7 @@
     border: solid 1px #ffffff;
   }
 
-  .BQ {
+  .JD {
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
     font-size: 30px;
     font-weight: 3;
@@ -52,7 +51,7 @@
     color: rgba(255, 255, 255, 0.86);
   }
 
-  .Benedict-Quartey {
+  .John-Doe {
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
     font-size: 23px;
     font-weight: 300;
@@ -249,4 +248,8 @@
   background: -moz-linear-gradient(left, rgb(255, 153, 102) 0%, rgb(255, 106, 99) 80%, rgb(255, 94, 98) 100%);
   background: linear-gradient(to right, rgb(255, 153, 102) 0%, rgb(255, 106, 99) 80%, rgb(255, 94, 98) 100%);
 
+}
+
+.violet {
+  background: #38394D;
 }

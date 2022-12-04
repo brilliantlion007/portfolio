@@ -3,7 +3,7 @@ import { Event } from '../models/event'
 export const events: Event[] = [
     {
         id: 0,
-        title: "Designed and taught Artificial Intelligence summer course at Brown University",
+        title: "Designed and taught [redacted] at Brown University",
         type: "Career",
         date: "August 2022",
         link: ""
@@ -19,7 +19,7 @@ export const events: Event[] = [
     },
     {
         id: 2,
-        title: "Joined Nokwary as Principal Machine Learning Engineer",
+        title: "Joined [redacted] as Principal Machine Learning Engineer",
         type: "Career",
         date: "August 2020",
         link: ""

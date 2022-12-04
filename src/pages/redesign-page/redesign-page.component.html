@@ -1,1 +1,249 @@
-<p>redesign-page works!</p>
+<div class="gradient-fallback">
+    <div class="background">
+        <div class="ui container " style="width:88%">
+            <div class="ui grid " style="padding-top:2%">
+                <div class="three wide column ">
+                    <a><img routerLink="/home-page" src="assets/icons/back.svg" style="height: 45px;"></a>
+                </div>
+                <div class=" ten wide column ">
+                    <!-- Empty but creates structure     -->
+                </div>
+                <div class="three wide column">
+                    <a class="HeaderTitles " style="float: right">My Projects</a>
+                </div>
+            </div>
+
+            <div class="Line" style="margin-top:1%;"></div>
+
+            <!-- style 1 for cover image and description without container (hide on mobile only show this grid on computers or wide screen widths) -->
+
+            <div class="ui grid hide-0-to-768" style="padding-top:2%">
+                <div class="four wide column ">
+                    <div class="ui segment " style="height:350px;">
+                        <div class="header no_overflow" style="height: 50px; padding-bottom:3% ">
+                            {{project.title}}</div>
+
+                        <img class="violet" style="object-fit:cover;width:100%;height:85%" sizes="25vw"
+                            src="{{project.cover_art}}">
+                    </div>
+
+                </div>
+                <div class="three wide column">
+
+                </div>
+                <div class="nine wide column">
+                    <a class="HeaderTitles " style="float: right">
+                        <p class="title "> This project explores identifying usability issues with existing websites and
+                            redesigning new responsive interfaces that address these issues. The newly designed
+                            interface adapts to various device screens. Coming up the final design involved practicing
+                            the entire web design process, from designing low-fidelity and high-fidelity prototypes to
+                            actual web development.
+                        </p>
+                    </a>
+                    <!-- <p style="font-weight:bold;color: #ffffff;float:right">[ Date: {{project.date}} ]</p> -->
+                </div>
+
+            </div>
+
+            <!-- hide this grid on computers or wide screen widths, only show on mobile and small screen widths -->
+            <div class="ui grid hide-769-to-up">
+                <div class="sixteen wide column ">
+                    <a class="HeaderTitles " style="float: right">
+                        <p class="title ">This project explores identifying usability issues with existing websites and
+                            redesigning new responsive interfaces that address these issues. The newly designed
+                            interface adapts to various device screens. Coming up the final design involved practicing
+                            the entire web design process, from designing low-fidelity and high-fidelity prototypes to
+                            actual web development.
+                        </p>
+                    </a>
+                    <p style="font-weight:bold;color: #ffffff;float:right">[ Date: {{project.date}} ]</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <br>
+        <br>
+    </div>
+
+</div>
+
+<div class="ui text container" style="padding-top:5%;">
+
+    <h1 class="font_0" style="line-height:normal; font-size:25px;"><span style="letter-spacing:normal;">Interface
+            Description</span></h1>
+
+    <p class="text">
+        The website interface studied in this project is the current students page of Yale university's art school. The
+        screenshot below shows what this webpage looks like.
+
+        Follow this link to experience this interface: <a
+            href="https://www.art.yale.edu/about/people/current-students">www.art.yale.edu/about/people/current-students</a>
+
+    </p>
+</div>
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <img class="center" style="width:90%;height:0%" src="assets/project_responsive/students.png">
+        <p>Homepage of Yale School of Art</p>
+    </div>
+</div>
+
+
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span style="letter-spacing:normal;">Usability
+                Analysis</span></h1>
+        <p class="text">
+            There are a number of obvious usability issues with this website. The usability issues highlighted below
+            were identified through the lens of efficiency, learnability, and memorability as well as general comments.
+        </p>
+    </div>
+    <ul>
+        <li>
+            There is no immediately obvious structure and hierarchy to the content of this webpage
+        </li>
+        <li>
+            There is no discernable difference between links and regular text
+        </li>
+        <li>
+            The chosen background image presentation format competes with the actual interactive elements and
+            informative text of the website for attention.
+        </li>
+        <li>
+            Listing the names of every single student makes the webpage very text-heavy and overwhelming to parse.
+        </li>
+        <li>
+            There is no quick and efficient method to find the name of a student.
+        </li>
+        <li>
+            Very relevant information sections and links are hidden below the complete list of student names and require
+            users to scroll a lot to see them.
+        </li>
+    </ul>
+    <!-- <div class="ui divider"></div> -->
+</div>
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span
+                style="letter-spacing:normal;">Accessibility Analysis</span></h1>
+        <p class="text">
+            While some usability elements of this website are lacking in some regards its accessibility features seem
+            quite well implemented, albeit not obvious and overshadowed by usability problems. Below is an image of an
+            accessibility analysis using the WebAIM WAVE.</p>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <img class="center" style="width:100%;height:0%" src="assets/project_responsive/accessibility.png">
+        <p>WebAIM Accessibility Analysis</p>
+    </div>
+</div>
+
+
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span style="letter-spacing:normal;">Low-Fidelity
+                Prototypes</span></h1>
+        <p class="text">
+            Below are the low fidelity prototypes designed to address the various usability issues identified in the
+            webpage under consideration. The wireframes were designed for three screen sizes (Desktop, Tablet and
+            Mobile). The wireframe for the Desktop size is annotated with comments describing how design choices address
+            the various usability issues. The tablet and mobile interfaces have the same elements as desktop, however
+            they are simply rearranged to responsively cater for the difference in screen sizes.</p>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <img class="center" style="width:100%;height:0%" src="assets/project_responsive/Desktopwire.png">
+        <br>
+        <h3>Desktop</h3>
+    </div>
+</div>
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <div class="ui grid">
+            <div class="ui eight wide column ">
+                <img class="center" style="height:100%" src="assets/project_responsive/tabletwire.png">
+                <br>
+                <h3>Tablet</h3>
+            </div>
+
+            <div class="ui eight wide column ">
+                <img class="center" style="height:100%" src="assets/project_responsive/Phonewire.png">
+                <br>
+                <h3>Mobile</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ui text container" style="padding-top:4%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span style="letter-spacing:normal;">
+                Visual Style Guide</span></h1>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <img class="center" style="width:100%;height:0%" src="assets/project_responsive/visualguide.png">
+        <!-- <p>Annotated Sketch of Interface highlighting key interactive components</p> -->
+    </div>
+</div>
+
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span
+                style="letter-spacing:normal;">High-Fidelity Prototypes</span></h1>
+        <p class="text">
+            Below are my high-fidelity prototypes providing more clarity on my low-fidelity mockups.</p>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <img class="center" style="width:100%;height:0%" src="assets/project_responsive/desktop.png">
+        <h3>Desktop</h3>
+    </div>
+</div>
+
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <img class="center" style="width:100%;height:0%" src="assets/project_responsive/tablets.png">
+        <!-- <p>Annotated Sketch of Interface highlighting key interactive components</p> -->
+        <h3>Tablet</h3>
+    </div>
+</div>
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span
+                style="letter-spacing:normal;">Redesigned Interface</span></h1>
+        <p class="text">
+            Here is a link to the redesigned responsive website illustrated in my high-fidelity prototype: <a href="https://uiuxrand100.web.app">https://uiuxrand100.web.app</a></p>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+
+
+<div>
+    <br>
+    <br>
+</div>
