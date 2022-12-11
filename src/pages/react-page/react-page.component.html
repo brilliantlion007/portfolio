@@ -1,1 +1,154 @@
-<p>react-page works!</p>
+<div class="gradient-fallback">
+    <div class="background">
+        <div class="ui container " style="width:88%">
+            <div class="ui grid " style="padding-top:2%">
+                <div class="three wide column ">
+                    <a><img routerLink="/home-page" src="assets/icons/back.svg" style="height: 45px;"></a>
+                </div>
+                <div class=" ten wide column ">
+                    <!-- Empty but creates structure     -->
+                </div>
+                <div class="three wide column">
+                    <a class="HeaderTitles " style="float: right">{{project.title}}</a>
+                </div>
+            </div>
+
+            <div class="Line" style="margin-top:1%;"></div>
+
+            <!-- style 1 for cover image and description without container (hide on mobile only show this grid on computers or wide screen widths) -->
+
+            <div class="ui grid hide-0-to-768" style="padding-top:2%">
+                <div class="four wide column ">
+                    <div class="ui segment " style="height:350px;">
+                        <div class="header no_overflow" style="height: 50px; padding-bottom:3% ">
+                            {{project.title}}</div>
+
+                        <img class="brightred" style="object-fit:cover;width:100%;height:85%" sizes="25vw"
+                            src="{{project.cover_art}}">
+                    </div>
+
+                </div>
+                <div class="three wide column">
+
+                </div>
+                <div class="nine wide column">
+                    <a class="HeaderTitles " style="float: right">
+                        <p class="title "> This project explores developing functional interactive web applications
+                            using the React framework.
+                            The web application presented here is a simple take on an online ordering interface for
+                            fastfood chain that serves desserts.
+
+                        </p>
+                    </a>
+                    <!-- <p style="font-weight:bold;color: #ffffff;float:right">[ Date: {{project.date}} ]</p> -->
+                </div>
+
+            </div>
+
+            <!-- hide this grid on computers or wide screen widths, only show on mobile and small screen widths -->
+            <div class="ui grid hide-769-to-up">
+                <div class="sixteen wide column ">
+                    <a class="HeaderTitles " style="float: right">
+                        <p class="title ">This project explores developing functional interactive web applications
+                            using the React framework.
+                            The web application presented here is a simple take on an online ordering interface for
+                            a fastfood chain that serves desserts.
+                        </p>
+                    </a>
+                    <p style="font-weight:bold;color: #ffffff;float:right">[ Date: {{project.date}} ]</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <br>
+        <br>
+    </div>
+
+</div>
+
+<div class="ui text container" style="padding-top:5%;">
+
+    <h1 class="font_0" style="line-height:normal; font-size:25px;"><span style="letter-spacing:normal;">Interface
+            Description</span></h1>
+
+    <p class="text">
+        The interface designed in this project is that of a web application presented here is a simple take on an online
+        ordering interface for
+        fastfood chain that serves desserts. Users are able to navigate and browse through the catalog of items in a
+        many of ways. There are filters that allow ordering items based on price. Additionally users can specificy specific groups of items such as "Dairy Products".
+        A responsive cart that is ever present and grows and shrinks as you add items reduces the interaction steps required to place an order.
+    </p>
+</div>
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <img class="center" style="width:90%;height:0%" src="assets/project_react/interface2.png">
+        <p>An image of FastFash: An online ordering app for deserts.</p>
+    </div>
+</div>
+
+
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span style="letter-spacing:normal;">Usability Principles Considered</span></h1>
+        <p class="text">
+            My application provides two filtering categories to cater for buyers that are allergic to Gluten and Diary products. My application also provides a way to sort through displayed products by price. You can see the pricer options first or the cheaper options first This sorting works with filtering as well, so you can filter to see products containing gluten then sort by price. My application also provided a dynamic cart that visually populates as you add items and accumulates the total price. There is also an intuitive remove button beside each item, which deletes an item from your cart and deducts its contribution to your total price. Finally there is an All filter which acts as a reset button, allowing you to see all items in the inventory.</p>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span style="letter-spacing:normal;">Organization of Components</span></h1>
+        <p class="text">
+            I implemented a FoodItem component to represent each food item. This component provided a view of all the various specifications of a product and provided a button to add that item to an aggregator. I used this component to dynamically generate items in the App.js based on a json file containing an array of each food item.</p>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+
+
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span
+                style="letter-spacing:normal;">How Data is Passed Down Through Components</span></h1>
+        <p class="text">
+            In the main App.js file, my application loads in an maps an array of fooditems in a json inventory file to create new instances of my fooditem component. Data from each entry in the json file is passed into the constructor for the FoodItem component, which uses the passed data to populate various display fields.</p>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span
+                style="letter-spacing:normal;">How the User Triggers State Changes</span></h1>
+        <p class="text">
+            My application tracks the state of two elements, an array of cart items and an array of the inventory. State changes on the inventory are triggered by selecting different tabs that act as filters for displaying specific kinds of food items. State changes on the cart items are triggered by adding and removing food items to the cart, aditionally incrementing an aggregator of each item price.</p>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+
+
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span style="letter-spacing:normal;">Try it out</span></h1>
+        <p class="text">
+            Here is a link to the interactive web application, have a look: <a
+                href="https://brilliantlion007.github.io/fastfash/#">https://brilliantlion007.github.io/fastfash</a></p>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+
+
+<div>
+    <br>
+    <br>
+</div>

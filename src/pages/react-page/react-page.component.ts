@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { software_projects } from '../../mocks/softwareprojects';
+
+declare var $: any;
 
 @Component({
   selector: 'app-react-page',
@@ -6,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./react-page.component.scss']
 })
 export class ReactPageComponent {
-
+  project = software_projects[2]
+  ngOnInit() {
+    window.scrollTo(0,0);
+  }
 }

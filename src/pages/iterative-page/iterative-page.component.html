@@ -1,1 +1,236 @@
-<p>iterative-page works!</p>
+<div class="gradient-fallback">
+    <div class="background">
+        <div class="ui container " style="width:88%">
+            <div class="ui grid " style="padding-top:2%">
+                <div class="three wide column ">
+                    <a><img routerLink="/home-page" src="assets/icons/back.svg" style="height: 45px;"></a>
+                </div>
+                <div class=" ten wide column ">
+                    <!-- Empty but creates structure     -->
+                </div>
+                <div class="three wide column">
+                    <a class="HeaderTitles " style="float: right">{{project.title}}</a>
+                </div>
+            </div>
+
+            <div class="Line" style="margin-top:1%;"></div>
+
+            <!-- style 1 for cover image and description without container (hide on mobile only show this grid on computers or wide screen widths) -->
+
+            <div class="ui grid hide-0-to-768" style="padding-top:2%">
+                <div class="four wide column ">
+                    <div class="ui segment " style="height:350px;">
+                        <div class="header no_overflow" style="height: 50px; padding-bottom:3% ">
+                            {{project.title}}</div>
+
+                        <img class="brightred" style="object-fit:cover;width:100%;height:85%" sizes="25vw"
+                            src="{{project.cover_art}}">
+                    </div>
+
+                </div>
+                <div class="three wide column">
+
+                </div>
+                <div class="nine wide column">
+                    <a class="HeaderTitles " style="float: right">
+                        <p class="title "> This project explores going through the entire iterative process of
+                            designing a product for realworld usecases. My team and I chose an actual early stage
+                            startup working on a cool problem without a public product. Using design processes, we
+                            conceptualized and designed a software product to address the problem the startup sought to
+                            solve.
+                        </p>
+                    </a>
+                    <!-- <p style="font-weight:bold;color: #ffffff;float:right">[ Date: {{project.date}} ]</p> -->
+                </div>
+
+            </div>
+
+            <!-- hide this grid on computers or wide screen widths, only show on mobile and small screen widths -->
+            <div class="ui grid hide-769-to-up">
+                <div class="sixteen wide column ">
+                    <a class="HeaderTitles " style="float: right">
+                        <p class="title ">This project explores going through the entire iterative process of
+                            designing a product for realworld usecases. My team and I chose an actual early stage
+                            startup working on a cool problem without a public product. Using design processes, we
+                            conceptualized and designed a software product to address the problem the startup sought to
+                            solve.
+                        </p>
+                    </a>
+                    <p style="font-weight:bold;color: #ffffff;float:right">[ Date: {{project.date}} ]</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <br>
+        <br>
+    </div>
+
+</div>
+
+<div class="ui text container" style="padding-top:5%;">
+
+    <h1 class="font_0" style="line-height:normal; font-size:25px;"><span style="letter-spacing:normal;">Startup
+            Description : Sonnet</span></h1>
+
+    <p class="text">
+        Sonnet AI is a startup that aims to improve the sales and marketing industry by leveraging advances in
+        Artificial Intelligence, specifically language modeling. Sonnet’s product automates writing personalized sales
+        emails with relevant information tailored to individual prospects.
+
+    </p>
+</div>
+
+
+
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span style="letter-spacing:normal;">Sketching
+                and Wireframing</span></h1>
+        <p class="text">
+            Before we began sketching interfaces for our Sonnet application the team decided that a browser web
+            application would be the most effective interface to start. The intended users for this application are
+            sales representatives in a wide range of industries. For these users we wanted to provide a comfortable and
+            familiar email experience to the email applications that they use in their daily life. With this in mind we
+            designed the Sonnet interfaces to provide structure in the form of well structured directories, client tags,
+            familiar email interfaces, etc to help facilitate their navigation throughout the application, while
+            providing them the added value AI assistance to help them draft sales emails more quickly.</p>
+
+        <p class="text">
+            With the vision in mind, designed sketches with a focus on diversifying our layouts to generate more ideas.
+            We generated several sketches each reimagning an interface for our application,in the end we had designs
+            with the following themes:
+        </p>
+        <ul class="text">
+            <li>Traditional Email Design</li>
+            <li>Embedded Plugin Design</li>
+            <li>Salesforce-like Design</li>
+            <li>Pinterest Board-like Design</li>
+        </ul>
+
+        <p class="text"> We consolidated elements and ideas from this diverse set of interface sketch options to create
+            one wireframe of our interface, shown below</p>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+
+
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <div class="ui grid" style="margin-top:0.3%;margin-bottom:0.3%">
+            <div class="ui eight wide column ">
+                <img class="center" style="width:90%;height:100%" src="assets/project_iterative/login.png">
+            </div>
+
+            <div class="ui eight wide column ">
+                <img class="center" style="width:90%;height:100%" src="assets/project_iterative/Pinterest.png">
+            </div>
+        </div>
+    </div>
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <div class="ui grid" style="margin-top:0.3%;margin-bottom:0.3%">
+            <div class="ui eight wide column ">
+                <img class="center" style="width:90%;height:100%" src="assets/project_iterative/Directory.png">
+            </div>
+
+            <div class="ui eight wide column ">
+                <img class="center" style="width:90%;height:100%" src="assets/project_iterative/Profile.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <img class="center" style="width:90%;height:0%" src="assets/project_iterative/email.png">
+        <!-- <p>Annotated Sketch of Interface highlighting key interactive components</p> -->
+    </div>
+</div>
+
+
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span
+                style="letter-spacing:normal;">High-fidelity Mockup</span></h1>
+        <p class="text">
+            Having laid the foundations in the previous steps with mockups, we sought some feedback from class mates and
+            designed a high-fidelity prototype of our final design. Below are two representative screens from this
+            prototype, you can also play with the interative protoype here: <a
+                href="https://www.figma.com/proto/g2sBSFhr7cQSlt5X3vjChO/Sonnet?node-id=2%3A3&scaling=scale-down&page-id=0%3A1&starting-point-node-id=2%3A3">Sonnet
+                HiFi Mockup</a>
+        </p>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <img class="center" style="width:90%;height:90%" src="assets/project_iterative/Figma1.png">
+    </div>
+</div>
+
+<div class="ui  container">
+    <div class="ui container" style="padding-top:2%; text-align: center;">
+        <img class="center" style="width:90%;height:90%" src="assets/project_iterative/Figma2.png">
+    </div>
+</div>
+
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span style="letter-spacing:normal;">User
+                Testing</span></h1>
+        <p class="text">
+            User testing is a crucial part of the iterative design process, it provides an avenue to validate
+            assumptions and gauge experiences of actual users. We used the services of UserTesting.com to get real users
+            to interact with our interactive solution to observe and improve based on their feedback
+            We developed a multi-step task that took a user through a complete interaction cycle of Sonnet’s main
+            functionality, while interacting with all the contact points of our high fidelity mockup. To clearly define
+            the task to the user we presented instructions that provided context and highlighted the step by step
+            subtask objectives.
+        </p>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+
+<div class="ui text container" style="padding-top:2%;">
+    <!-- <div class="ui divider"></div> -->
+    <div class="ui basic segment" style="width:100%">
+        <h1 class="font_0" style="line-height:normal; font-size:25px;"><span style="letter-spacing:normal;">Analysis of
+                Results</span></h1>
+        <p class="text">
+            Key Take Aways from Testing Results
+        </p>
+        <ul class="text">
+            <li>
+                Generally our test results were positive, with a significant number of user interaction choices and
+                observations matching our design intuitions and conceptual model.
+            </li>
+            <li>
+                Testers found the interface easy to figure out and straight forward for accomplishing the intended
+                functionality.
+            </li>
+            <li>
+                Two users expressed interest in a more sophisticated design while one user appreciated the current
+                simplicity of the design. User demography revealed a correlation between the age of testers and their
+                sentiments regarding sophistication of design.
+            </li>
+            <li>
+                Generally our testers commended our consistent color coding and the presented functionality,
+                acknowledging its relevance for the Sales Industry. Our contact management feature was particularly
+                appreciated.
+            </li>
+        </ul>
+    </div>
+    <!-- <div class="ui divider"></div> -->
+</div>
+
+
+<div>
+    <br>
+    <br>
+</div>
